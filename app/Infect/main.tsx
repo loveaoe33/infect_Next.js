@@ -1,10 +1,12 @@
 'use client';
 
-
-import "../app/css/main.css";
-
+import React from "react";
+import "../css/main.css";
+import MainBlocks from "./functionDiv";
+import TableBlocks from "./tableDiv";
 export default function Main() {
-
+   const [patientIsOpen, setPatientOpen] = React.useState(false);
+   const [formIsOpen, setFormOpen] = React.useState(false);
     return (
         <>
             <div className="infect-body">
@@ -40,6 +42,9 @@ export default function Main() {
                             </div>
                         </div>
                     </div>
+                                                <MainBlocks />
+                                                <TableBlocks/>
+
                 </div>
             </div>
         </>
