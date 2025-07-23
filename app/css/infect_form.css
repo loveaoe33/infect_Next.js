@@ -1,0 +1,36 @@
+    .form-body {
+      font-family: Arial, sans-serif;
+      padding: 2rem;
+      background-color: #f4f4f4;
+    }
+
+    label {
+      font-weight: bold;
+      margin-right: 1rem;
+    }
+
+    select {
+      padding: 0.5rem;
+      font-size: 1rem;
+    }
+
+    .template-content {
+      margin-top: 2rem;
+      padding: 1.5rem;
+      border-radius: 8px;
+      background-color: #fff;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      display: none;
+    }
+
+    /* 用於顯示對應的內容 */
+    #template-dashboard:checked ~ .content-dashboard,
+    #template-user:checked ~ .content-user,
+    #template-report:checked ~ .content-report {
+      display: block;
+    }
+
+    /* 隱藏原始 radio 按鈕 */
+    input[type="radio"] {
+      display: none;
+    }

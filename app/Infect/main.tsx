@@ -4,9 +4,31 @@ import React from "react";
 import "../css/main.css";
 import MainBlocks from "./functionDiv";
 import TableBlocks from "./tableDiv";
+import PatientModal from "../modal/patient_modal";
+import { Button } from "antd";
+
+
+
+export type UserData = {
+        username:string,
+        password:string,
+        useToken: string,
+        level: number
+
+    }
 export default function Main() {
-   const [patientIsOpen, setPatientOpen] = React.useState(false);
-   const [formIsOpen, setFormOpen] = React.useState(false);
+
+
+    const [patientIsOpen, setPatientOpen] = React.useState(false);
+    const [formIsOpen, setFormOpen] = React.useState(false);
+    const [isCloseLogin, setIsCloseLogin] = React.useState(() => () => setPatientOpen(false));
+    const [domain, setDomain] = React.useState("localhost:8080");
+    const [userData, setUserData] = React.useState<UserData>({
+        username: "loveaoe33",
+        password: "123",
+        useToken: "1234567890abcdef",
+        level: 1
+    });
     return (
         <>
             <div className="infect-body">
@@ -42,8 +64,8 @@ export default function Main() {
                             </div>
                         </div>
                     </div>
-                                                <MainBlocks />
-                                                <TableBlocks/>
+                    <MainBlocks />
+                    <TableBlocks />
 
                 </div>
             </div>
