@@ -6,6 +6,7 @@ import Image from "next/image";
 import "../css/infect_patient.css";
 import { ToastContainer, toast } from 'react-toastify';
 import { UserData } from "../Infect/main";
+import CathObed from "../formTemple/cathObed";
 // import User from "../main/User";
 // If you have a User type or class, import it from the correct path, for example:
 
@@ -19,6 +20,7 @@ interface LoginAccount {
     title: string;
     userData: UserData;
 }
+
 
 
 
@@ -117,6 +119,7 @@ const modalView = ({ isClose, isOpen, title, domain }: LoginAccount) => {
                             <div className="template-content-container">
                                 {selectedTemplate === 'dashboard' && (
                                     <div className="template-content content-dashboard">
+                                        <CathObed/>
                                         <h2>📊 Dashboard Template</h2>
                                         <p>這裡是 Dashboard 相關的元件展示區塊。</p>
                                     </div>
@@ -126,64 +129,7 @@ const modalView = ({ isClose, isOpen, title, domain }: LoginAccount) => {
                                     <div className="template-content content-user">
                                         <h2>👤 User Template</h2>
                                         <p>這裡是 User 管理頁的模組展示。</p>
-                                                                                <p>這裡是 User 管理頁的模組展示。</p>
-
-                                        <p>這裡是 User 管理頁的模組展示。</p>
-
-                                        <p>這裡是 User 管理頁的模組展示。</p>
-
-                                        <p>這裡是 User 管理頁的模組展示。</p>
-
-                                        <p>這裡是 User 管理頁的模組展示。</p>
-
-                                        <p>這裡是 User 管理頁的模組展示。</p>
-
-                                        <p>這裡是 User 管理頁的模組展示。</p>
-
-                                        <p>這裡是 User 管理頁的模組展示。</p>
-
-                                        <p>這裡是 User 管理頁的模組展示。</p>
-
-                                        <p>這裡是 User 管理頁的模組展示。</p>
-
-                                        <p>這裡是 User 管理頁的模組展示。</p>
-
-                                        <p>這裡是 User 管理頁的模組展示。</p>
-
-                                        <p>這裡是 User 管理頁的模組展示。</p>
-
-                                        <p>這裡是 User 管理頁的模組展示。</p>
-
-                                        <p>這裡是 User 管理頁的模組展示。</p>
-
-                                        <p>這裡是 User 管理頁的模組展示。</p>
-                                        <p>這裡是 User 管理頁的模組展示。</p>
-
-                                        <p>這裡是 User 管理頁的模組展示。</p>
-
-                                        <p>這裡是 User 管理頁的模組展示。</p>
-
-                                        <p>這裡是 User 管理頁的模組展示。</p>
-
-                                        <p>這裡是 User 管理頁的模組展示。</p>
-
-                                        <p>這裡是 User 管理頁的模組展示。</p>
-
-                                        <p>這裡是 User 管理頁的模組展示。</p>
-
-                                        <p>這裡是 User 管理頁的模組展示。</p>
-
-                                        <p>這裡是 User 管理頁的模組展示。</p>
-
-                                        <p>這裡是 User 管理頁的模組展示。</p>
-
-                                        <p>這裡是 User 管理頁的模組展示。</p>
-
-                                        <p>這裡是 User 管理頁的模組展示。</p>
-
-                                        <p>這裡是 User 管理頁的模組展示。</p>
-
-                                        <p>這裡是 User 管理頁的模組展示。</p>
+                                         
                                         
 
                                     </div>

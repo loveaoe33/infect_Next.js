@@ -1,4 +1,4 @@
- body {
+ .obed-body {
       font-family: Arial, sans-serif;
       padding: 20px;
     }
@@ -49,20 +49,24 @@
       width: 180px;
     }
 
-    table {
+
+
+    
+
+    .obed-table {
       border-collapse: collapse;
       width: 100%;
       margin-top: 10px;
     }
 
-    th, td {
+    .obed-table th, .obed-table td {
       border: 1px solid #999;
       padding: 8px;
       text-align: center;
       font-size: 14px;
     }
 
-    th {
+    .obed-table th {
       background-color: #f0f0f0;
     }
 
